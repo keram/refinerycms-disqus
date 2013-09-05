@@ -1,0 +1,23 @@
+{
+  "name": "refinerycms-disqus",
+  "description": "Disqus plugin for Refinery CMS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/keram-refinery/refinerycms-disqus",
+  "bugs": "https://github.com/keram-refinery/refinerycms-disqus/issues",
+  "author": {
+    "name": "Marek L.",
+    "email": "nospam.keram@gmail.com",
+    "url": "http://refinery.sk/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keram-refinery/refinerycms-disqus.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/mit-license.php/"
+  }],
+  "readme": "README.md",
+  "readmeFilename": "README.md",
+  "dependencies": { }
+}

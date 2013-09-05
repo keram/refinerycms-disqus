@@ -1,0 +1,5 @@
+<%
+  config ||= {}
+  config[:shortname] ||= Refinery::Disqus.config.shortname
+-%>
+<div id="disqus_thread" data-disqus="<%= config.to_json %>"></div>
