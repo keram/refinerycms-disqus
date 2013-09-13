@@ -2,6 +2,8 @@
 (function (window, $) {
 
 // Source: ~/refinerycms-disqus/scripts/disqus.js
+(function (window, refinery) {
+
     /**
      * @constructor
      * @class refinery.extern.Disqus
@@ -21,7 +23,7 @@
              *
              * @type {string}
              */
-            //url: 'http://localhost/embed.js?{shortname}'
+            //url: 'http://localhost/embed.js?{disqus_shortname}'
             url: 'http://{shortname}.disqus.com/embed.js'
         },
 
@@ -171,4 +173,5 @@
             refinery('extern.Disqus').init(disqus_holder);
         }
     };
+}(window, refinery));
 }(window, jQuery));

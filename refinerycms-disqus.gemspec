@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email             = %q{nospam.keram@gmail.com}
   s.homepage          = %q{http://refinery.sk}
   s.authors           = ['Marek Labos']
-  s.license           = ['MIT']
+  s.license           = 'MIT'
   s.files             = Dir['lib/**/*', 'app/**/*', '*.md']
   s.require_paths     = %w(lib)
 
