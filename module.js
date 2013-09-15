@@ -5,15 +5,15 @@ var dir = __dirname,
     build_dir = dir + '/app/assets',
     grunt = {
         'watch' : [{
-            'base_js' : {
+            'js' : {
                 'files': [scripts_dir + '/*.js'],
-                'tasks': ['closureCompiler:disqus_base_js',
-                            'concat:disqus_base_js',
+                'tasks': ['closureCompiler:disqus_js',
+                            'concat:disqus_js',
                             'copy:disqus_js']
             }
         }],
         'closureCompiler': [{
-            'base_js' : {
+            'js' : {
                 'options': {
                     'checkModified': true,
                     'compilerOpts': {
@@ -35,15 +35,15 @@ var dir = __dirname,
                 'src': [
                     'scripts/disqus.js'
                 ],
-                'dest': '.tmp/assets/javascripts/refinery/disqus.min.js'
+                'dest': '.tmp/assets/javascripts/disqus.min.js'
             }
         }],
         'concat': [{
-            'base_js' : {
+            'js' : {
                 'src': [
                     'scripts/disqus.js'
                 ],
-                'dest': '.tmp/assets/javascripts/refinery/disqus.all.js'
+                'dest': '.tmp/assets/javascripts/disqus.all.js'
             }
         }],
         'copy': [{
@@ -52,7 +52,7 @@ var dir = __dirname,
                     'expand': true,
                     'dot': true,
                     'cwd': dir + '/.tmp/assets/javascripts/',
-                    'dest': build_dir + '/javascripts/',
+                    'dest': build_dir + '/javascripts/refinery/disqus/',
                     'src': [
                         '**'
                     ]

@@ -6,7 +6,7 @@
 
     /**
      * @constructor
-     * @class refinery.extern.Disqus
+     * @class refinery.disqus.Disqus
      * @expose
      * @extends {refinery.Object}
      */
@@ -14,7 +14,7 @@
 
         name: 'Disqus',
 
-        module: 'extern',
+        module: 'disqus',
 
         options: {
 
@@ -170,7 +170,7 @@
         var disqus_holder = holder.find('#disqus_thread');
 
         if (disqus_holder.length > 0) {
-            refinery('extern.Disqus').init(disqus_holder);
+            refinery('disqus.Disqus').init(disqus_holder);
         }
     };
 }(window, refinery));
