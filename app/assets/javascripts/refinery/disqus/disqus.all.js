@@ -1,7 +1,7 @@
 
 (function (window, $) {
 
-// Source: refinerycms-disqus/scripts/disqus.js
+// Source: scripts/disqus.js
 (function (window, refinery) {
 
     /**
