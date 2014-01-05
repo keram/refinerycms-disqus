@@ -142,7 +142,7 @@
 
             if (that.is('initialisable')) {
                 that.is('initialising', true);
-                that.attach_holder(holder);
+                that.holder = holder;
 
                 that.initialise_or_reload();
 
@@ -162,17 +162,10 @@
      * @param  {jQuery} holder
      * @return {undefined}
      */
-    refinery.ui.disqus = function (holder) {
-        /**
-         * Disqus dom holder
-         *
-         * @type {jQuery}
-         */
-        var disqus_holder = holder.find('#disqus_thread');
-
-        if (disqus_holder.length > 0) {
-            refinery('disqus.Disqus').init(disqus_holder);
-        }
+    refinery.ui.disqus = function (holder, ui) {
+        holder.find('#disqus_thread').each(function () {
+            ui.addObject( refinery('disqus.Disqus').init($(this)) );
+        });
     };
 }(window, refinery));
 

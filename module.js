@@ -61,4 +61,4 @@ var dir = __dirname,
         }]
     };
 
-exports.grunt = grunt;
+// exports.grunt = grunt;

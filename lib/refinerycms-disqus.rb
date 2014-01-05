@@ -10,7 +10,7 @@ module Refinery
       engine_name :refinery_disqus
 
       initializer 'register refinery_disqus javascripts' do
-        Refinery::Core.config.register_javascript('refinery/disqus/disqus.min.js')
+        Refinery::Core.config.register_javascript('refinery/disqus/disqus.all.js')
       end
 
     end
